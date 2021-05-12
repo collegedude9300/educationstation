@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+<style>
+body {background-color: orange;}
+h1{text-align: center;}
+</style>
+<div class="container">
+<h1> Let's Learn Some Basic Math:</h1>
+</div>
+</head>
+<body>
+
+<h2 style= "text-align: center"> Let's Begin With Some Skip Counting to 30: </h2>
+<h3> Ones:  </h3>
+<p id="demo"></p>
+<script type="text/javascript">
+var text= " ";
+var i;
+for (i=0; i<=30; i++)
+{
+		text += "The number is " + i + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+<h3> Twos:  </h3>
+<p id="demoTwo"></p>
+<script type="text/javascript">
+var text= " ";
+var i;
+for (i=0; i<=30; i= i+2)
+{
+		text += "The number is " + i + "<br>";
+}
+document.getElementById("demoTwo").innerHTML = text;
+</script>
+<h3> Fives:  </h3>
+<p id="demoFive"></p>
+<script type="text/javascript">
+var text= " ";
+var i;
+for (i=0; i<=30; i= i + 5)
+{
+		text += "The number is " + i + "<br>";
+}
+document.getElementById("demoFive").innerHTML = text;
+</script>
+<p>----------------------------------------------------------------------------------------------------------------------------------------------------</p>
+<h3> Let's count to one hundred (100) by skip counting by 10's:</h3>
+<p id="demoTen"></p>
+<script type="text/javascript">
+var text= " ";
+var i;
+for (i=0; i<=100; i= i+10)
+{
+		text += "The number is " + i + "<br>";
+}
+document.getElementById("demoTen").innerHTML = text;
+</script>
+<a href="add.html"> Let's Do Some Basic Addition </a>
+<br><br>
+<a href="sub.html"> Let's Do Some Basic Subtraction </a>
+<br><br>
+<a href="k.html"> Go Back to K  Home </a>
+</body>
+</html>

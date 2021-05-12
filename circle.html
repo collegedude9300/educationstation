@@ -1,0 +1,85 @@
+		<html>
+		<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>   
+        <title>Learn Colors:</title>        
+        <style type="text/css">
+            .circle 
+			{                
+                width:130px;
+                height:130px;
+                border-radius: 50%;
+                float:left;
+                margin-right:50px;               
+            }           
+            #red-circle 
+			{               
+                background-color: red;               
+            }           
+            #blue-circle 
+			{                
+                background-color: blue;               
+            }            
+            #yellow-circle 
+			{                
+                background-color: yellow;   
+            }
+			#green-circle 
+			{               
+                background-color: green;               
+            }            
+            #orange-circle 
+			{                
+                background-color: orange;               
+            }            
+            #purple-circle 
+			{                
+                background-color: purple;   
+            }
+        </style>
+    </head>
+    <body>
+     <div class="container">
+        <h3 style= "text-align: center"> Color Game with Circles:</h3>    
+</div>    	
+        <div class="circle" id="red-circle"></div>   		
+        <div class="circle" id="blue-circle"></div>        
+        <div class="circle" id="yellow-circle"></div>
+        <div class="circle" id="green-circle"></div>        
+        <div class="circle" id="orange-circle"></div>        
+        <div class="circle" id="purple-circle"></div>        
+        <script type="text/javascript">
+            document.getElementById("red-circle").onclick = function() {				
+                document.getElementById("red-circle").style.display = "none";
+				alert("RED");
+            }            
+            document.getElementById("yellow-circle").onclick = function() {                
+                document.getElementById("yellow-circle").style.display = "none";
+                alert("YELLOW");
+            }
+            
+            document.getElementById("blue-circle").onclick = function() {                
+                document.getElementById("blue-circle").style.display = "none";
+                alert("BLUE");
+            }
+            document.getElementById("green-circle").onclick = function() {                
+                document.getElementById("green-circle").style.display = "none";
+                alert("GREEN");
+            }           
+            document.getElementById("orange-circle").onclick = function() {                
+                document.getElementById("orange-circle").style.display = "none";
+                alert("ORANGE");
+            }           
+            document.getElementById("purple-circle").onclick = function() {               
+                document.getElementById("purple-circle").style.display = "none";
+                alert("PURPLE");
+            }			
+        </script>
+		<br><br><br><br><br><br><br><br><br><br>
+					<a href="index.html"> Go Back to Home </a>
+</body>
+</html>

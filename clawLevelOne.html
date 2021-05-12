@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+<style>
+body {background-color: lightgreen;}
+#div1, #div2, #div3 {
+  float: left;
+  width: 200px;
+  height: 60px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+<div class= "container">
+<h2>The Claw: Level One:</h2>
+<h3>Drag the letters and drop them into the rectangles for these four pictures.</h3>
+</div>
+<h3> Picture One: </h3>
+<img src="cat.png"  width="200" height="200">
+<br><br>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br><br><br><br><br><br><br><br>
+<img src="C.png" draggable="true" ondragstart="drag(event)" id="p1a" width="88" height="31">
+<br><br><br>
+<img src="A.png" draggable="true" ondragstart="drag(event)" id="p1b" width="88" height="31">
+<br><br><br>
+<img src="T.png" draggable="true" ondragstart="drag(event)" id="p1c" width="88" height="31">
+<br><br><br>
+<h3> Picture Two: </h3>
+<img src="bat.png"  width="200" height="200">
+<br><br>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br><br><br><br><br><br><br><br>
+<img src="B.png" draggable="true" ondragstart="drag(event)" id="p2a" width="88" height="31">
+<br><br><br>
+<img src="A.png" draggable="true" ondragstart="drag(event)" id="p2b" width="88" height="31">
+<br><br><br>
+<img src="T.png" draggable="true" ondragstart="drag(event)" id="p2c" width="88" height="31">
+<br><br><br>
+<h3> Picture Three: </h3>
+<img src="sun.png"  width="200" height="200">
+<br><br>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br><br><br><br><br><br><br><br>
+<img src="S.png" draggable="true" ondragstart="drag(event)" id="p3a" width="88" height="31">
+<br><br><br>
+<img src="U.png" draggable="true" ondragstart="drag(event)" id="p3b" width="88" height="31">
+<br><br><br>
+<img src="N.png" draggable="true" ondragstart="drag(event)" id="p3c" width="88" height="31">
+<br><br><br>
+<h3> Picture Four: </h3>
+<img src="bus.png"  width="200" height="200">
+<br><br>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br><br><br><br><br><br><br><br>
+<img src="B.png" draggable="true" ondragstart="drag(event)" id="p4a" width="88" height="31">
+<br><br><br>
+<img src="U.png" draggable="true" ondragstart="drag(event)" id="p4b" width="88" height="31">
+<br><br><br>
+<img src="S.png" draggable="true" ondragstart="drag(event)" id="p4c" width="88" height="31">
+<br><br><br>
+<p>  Are you ready for the next level? To go to the next level, click on, 'Level Two', or, to go back to the main menu, click on, 'Go Back to Main Menu'. </p>
+<a href="clawLevelTwo.html"> Level Two</a>
+<br><br>
+<a href="reading.html"> Go Back to Main Menu</a>
+</body>
+</html>
